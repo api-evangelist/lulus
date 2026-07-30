@@ -1,8 +1,25 @@
 aid: lulus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lulus.png
 name: Lulus
-description: 'Lulus is a company surfaced as a portfolio company of ivp and added to the API Evangelist
-  network as a stub for enrichment. Sector: ecommerce. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Lulus (Lulus Fashion Lounge Holdings) is a direct-to-consumer online
+  fashion retailer offering women''s apparel, dresses, shoes, and accessories,
+  operating primarily through lulus.com and mobile apps. Surfaced as a portfolio
+  company of IVP and added to the API Evangelist network. As of this enrichment pass
+  Lulus publishes no public developer portal, API documentation, or machine-readable
+  API surface: developer.lulus.com does not resolve and no /.well-known/ discovery
+  documents are served. This profile therefore captures company identity plus a
+  live domain-security posture probe rather than any API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/lulus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ecommerce
+- Fashion
+- Retail
+- Apparel
+- Direct To Consumer
+- Online Shopping
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/lulus-domain-security.yml
 - type: Website
   url: https://www.lulus.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
